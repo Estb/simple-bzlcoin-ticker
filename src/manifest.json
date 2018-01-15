@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "Simple Bzlcoin Ticker",
+    "description": "This extension shows latest price ticker of popular BZL trading markets.",
+    "version": "0.1",
+
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "persistent": true,
+        "page": "background.html"
+    },
+
+    "options_page": "options.html",
+	
+	"permissions": [
+        "https://bzlcoin.org/marketbzl.php"
+    ]
+}
